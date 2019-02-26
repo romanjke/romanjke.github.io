@@ -1,0 +1,32 @@
+mixin modal(work, id)
+    // Modal
+    .portfolio-modal.modal.fade(id=id role="dialog")
+        .modal-dialog.modal-lg.modal-dialog-centered
+            // Modal content
+            .modal-content
+                .modal-header
+                    h4(class="modal-title")= work.name
+                    button(type="button" class="close" data-dismiss="modal") &times;
+
+                .modal-body
+                    img(src="img/" + work.img class="portfolio-modal__image" alt=work.name)
+
+                    dl
+                        dt Ссылка:
+                        dd
+                            a(href=work.link target="_blank")= work.link
+
+                        dt Описание:
+                        dd !{work.desc}
+
+                        dt CMS/Framework:
+                        dd= work.base
+
+                        dt Моя роль:
+                        dd !{work.role}
+
+
+                .modal-footer
+                    button(type="button" class="btn btn-light" data-dismiss="modal") Закрыть
+            // Modal content End
+    // Modal End

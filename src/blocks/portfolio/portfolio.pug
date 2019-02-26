@@ -1,0 +1,13 @@
+mixin portfolio(works)
+    section.portfolio
+        .container
+            h2.title.title_center Портфолио
+
+            .row.portfolio__list
+                each work, index in works
+                    .col-md-6.col-lg-4
+                        a(href="#" class="portfolio__item" data-toggle="modal" data-target="#modal-" + index)
+                            img(src="img/" + work.img class="portfolio__image" alt=work.name)
+
+                            .portfolio__over
+                                .portfolio__name= work.name

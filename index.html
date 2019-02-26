@@ -1,14 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <ul>
-        <li><a href="/axit/index.html" target="_blank">Uberweb</a></li>
-        <li><a href="/fudi/index.html" target="_blank">Uberweb</a></li>
-        <li><a href="/uberweb/index.html" target="_blank">Uberweb</a></li>
-    </ul>
-</body>
+<html lang="ru">
+  <head>
+    <title>Портфолио</title>
+    <meta charset="utf-8"/>
+    <meta content="Roman" name="author"/>
+    <meta content="Портфолио" name="description"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400,700"/>
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- endbuild-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="title title_center">Портфолио</h2>
+        <div class="row portfolio__list">
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-0"><img class="portfolio__image" src="img/ivgpu.png" alt="Официальный сайт ИВГПУ"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Официальный сайт ИВГПУ</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-1"><img class="portfolio__image" src="img/ds.png" alt="Сайт диссертационных советов ИВГПУ"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Сайт диссертационных советов ИВГПУ</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-2"><img class="portfolio__image" src="img/rasp.png" alt="Сайт расписания занятий и экзаменов ИВГПУ"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Сайт расписания занятий и экзаменов ИВГПУ</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-3"><img class="portfolio__image" src="img/smartex.png" alt="Сайт научной конференции &quot;SMARTEX&quot;"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Сайт научной конференции &quot;SMARTEX&quot;</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-4"><img class="portfolio__image" src="img/poisk.png" alt="Сайт научной конференции &quot;ПОИСК&quot;"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Сайт научной конференции &quot;ПОИСК&quot;</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-5"><img class="portfolio__image" src="img/isv.png" alt="Сайт научной конференции &quot;Информационная среда вуза&quot;"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Сайт научной конференции &quot;Информационная среда вуза&quot;</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-6"><img class="portfolio__image" src="img/genesis.png" alt="Сайт научной конференции &quot;Генезис&quot;"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Сайт научной конференции &quot;Генезис&quot;</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-7"><img class="portfolio__image" src="img/axit.png" alt="Верстка лендингов по psd шаблонам"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Верстка лендингов по psd шаблонам</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-8"><img class="portfolio__image" src="img/fudi.png" alt="Верстка лендингов по psd шаблонам"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Верстка лендингов по psd шаблонам</div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-9"><img class="portfolio__image" src="img/uberweb.png" alt="Тестовое задание от веб-студии Uberweb"/>
+              <div class="portfolio__over">
+                <div class="portfolio__name">Тестовое задание от веб-студии Uberweb</div>
+              </div></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-0" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Официальный сайт ИВГПУ</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/ivgpu.png" alt="Официальный сайт ИВГПУ"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://ivgpu.com" target="_blank">http://ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Разработка нового официального сайта ИВГПУ</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>Joomla</dd>
+              <dt>Моя роль:</dt>
+              <dd>Участие в совместной разработке. <br> Настройка CMS, установка и настройка плагинов, создание шаблонов, наполнение контентом, обработка изображений, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Сайт диссертационных советов ИВГПУ</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/ds.png" alt="Сайт диссертационных советов ИВГПУ"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://ds.ivgpu.com" target="_blank">http://ds.ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Сайт диссертационных советов ИВГПУ, где размещается информация о представленных к защите, защищенных и добавленных в архив диссертациях, а также сведения о самих диссертационных советах и пр. <br> Пользователи, наделенные специальными правами, (администраторы) могут добавлять, изменять и удалять диссертации/диссертационные советы</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>Laravel</dd>
+              <dt>Моя роль:</dt>
+              <dd>Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и первоначальная настройка фреймворка, установка необходимых пакетов, программирование с использованием API фреймворка, создание шаблонов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-2" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Сайт расписания занятий и экзаменов ИВГПУ</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/rasp.png" alt="Сайт расписания занятий и экзаменов ИВГПУ"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://rasp.ivgpu.com" target="_blank">http://rasp.ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Сайт расписания занятий и экзаменов ИВГПУ, где пользователь с помощью формы на главной странице может выбрать определенную учебную группу/преподавателя и найти соответствующее расписание занятий/экзаменов как на две недели, так и на определенный день. Полученное расписание можно скачать в формате <i>.xlsx.</i> <br> Пользователи, наделенные специальными правами, (администраторы) могут добавлять, изменять и удалять занятия для определенных учебных групп, а также некоторую другую информацию</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>Laravel</dd>
+              <dt>Моя роль:</dt>
+              <dd>Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и первоначальная настройка фреймворка, установка необходимых пакетов, программирование с использованием API фреймворка, создание шаблонов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-3" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Сайт научной конференции &quot;SMARTEX&quot;</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/smartex.png" alt="Сайт научной конференции &quot;SMARTEX&quot;"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://smartex2.ivgpu.com" target="_blank">http://smartex2.ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Сайт научной конференции "SMARTEX"</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>WordPress</dd>
+              <dt>Моя роль:</dt>
+              <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-4" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Сайт научной конференции &quot;ПОИСК&quot;</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/poisk.png" alt="Сайт научной конференции &quot;ПОИСК&quot;"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://poisk.ivgpu.com" target="_blank">http://poisk.ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Сайт научной конференции "ПОИСК"</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>WordPress</dd>
+              <dt>Моя роль:</dt>
+              <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-5" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Сайт научной конференции &quot;Информационная среда вуза&quot;</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/isv.png" alt="Сайт научной конференции &quot;Информационная среда вуза&quot;"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://isv.ivgpu.com" target="_blank">http://isv.ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Сайт научной конференции "Информационная среда вуза"</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>WordPress</dd>
+              <dt>Моя роль:</dt>
+              <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-6" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Сайт научной конференции &quot;Генезис&quot;</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/genesis.png" alt="Сайт научной конференции &quot;Генезис&quot;"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="http://genesis.ivgpu.com" target="_blank">http://genesis.ivgpu.com</a></dd>
+              <dt>Описание:</dt>
+              <dd>Сайт научной конференции "Генезис"</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>WordPress</dd>
+              <dt>Моя роль:</dt>
+              <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-7" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Верстка лендингов по psd шаблонам</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/axit.png" alt="Верстка лендингов по psd шаблонам"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="/portfolio/axit/index.html" target="_blank">/portfolio/axit/index.html</a></dd>
+              <dt>Описание:</dt>
+              <dd>Верстка лендингов по psd шаблонам</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>HTML</dd>
+              <dt>Моя роль:</dt>
+              <dd>Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-8" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Верстка лендингов по psd шаблонам</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/fudi.png" alt="Верстка лендингов по psd шаблонам"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="/portfolio/fudi/index.html" target="_blank">/portfolio/fudi/index.html</a></dd>
+              <dt>Описание:</dt>
+              <dd>Верстка лендингов по psd шаблонам</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>HTML</dd>
+              <dt>Моя роль:</dt>
+              <dd>Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <!-- Modal-->
+    <div class="portfolio-modal modal fade" id="modal-9" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Тестовое задание от веб-студии Uberweb</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"><img class="portfolio-modal__image" src="img/uberweb.png" alt="Тестовое задание от веб-студии Uberweb"/>
+            <dl>
+              <dt>Ссылка:</dt>
+              <dd><a href="/portfolio/uberweb/index.html" target="_blank">/portfolio/uberweb/index.html</a></dd>
+              <dt>Описание:</dt>
+              <dd>Тестовое задание от веб-студии Uberweb</dd>
+              <dt>CMS/Framework:</dt>
+              <dd>HTML</dd>
+              <dt>Моя роль:</dt>
+              <dd>Адаптивная верстка лендинга по psd макету</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light" type="button" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+        <!-- Modal content End-->
+      </div>
+    </div>
+    <!-- Modal End-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- build:js js/main.js-->
+    <script src="js/main.js"></script>
+    <!-- endbuild-->
+  </body>
 </html>
