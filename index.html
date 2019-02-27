@@ -7,13 +7,60 @@
     <meta content="Портфолио" name="description"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
     <!-- build:css css/main.css-->
     <link rel="stylesheet" href="css/main.css"/>
     <!-- endbuild-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
   </head>
   <body>
+    <section class="skills">
+      <div class="container">
+        <h2 class="title title_center">Навыки</h2>
+        <div class="row">
+          <div class="col-md-6 skills__part">
+            <h3 class="skills__title">Технологии</h3>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML5 80%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS3 80%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">jQuery 60%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">PHP 60%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">MySQL 70%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Git 80%</div>
+            </div>
+          </div>
+          <div class="col-md-6 skills__part">
+            <h3 class="skills__title">Платформы</h3>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">1С-Битрикс 80%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Laravel 80%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Joomla 65%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">WordPress 40%</div>
+            </div>
+            <div class="skills__item progress" style="height: 35px;">
+              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">phpBBex 40%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="portfolio">
       <div class="container">
         <h2 class="title title_center">Портфолио</h2>
@@ -67,7 +114,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Официальный сайт ИВГПУ</h4>
+            <h4 class="portfolio-modal__title modal-title">Официальный сайт ИВГПУ</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/ivgpu.png" alt="Официальный сайт ИВГПУ"/>
@@ -76,7 +123,7 @@
               <dd><a href="http://ivgpu.com" target="_blank">http://ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Разработка нового официального сайта ИВГПУ</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>Joomla</dd>
               <dt>Моя роль:</dt>
               <dd>Участие в совместной разработке. <br> Настройка CMS, установка и настройка плагинов, создание шаблонов, наполнение контентом, обработка изображений, дальнейшая поддержка</dd>
@@ -96,7 +143,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Сайт диссертационных советов ИВГПУ</h4>
+            <h4 class="portfolio-modal__title modal-title">Сайт диссертационных советов ИВГПУ</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/ds.png" alt="Сайт диссертационных советов ИВГПУ"/>
@@ -105,7 +152,7 @@
               <dd><a href="http://ds.ivgpu.com" target="_blank">http://ds.ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Сайт диссертационных советов ИВГПУ, где размещается информация о представленных к защите, защищенных и добавленных в архив диссертациях, а также сведения о самих диссертационных советах и пр. <br> Пользователи, наделенные специальными правами, (администраторы) могут добавлять, изменять и удалять диссертации/диссертационные советы</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>Laravel</dd>
               <dt>Моя роль:</dt>
               <dd>Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и первоначальная настройка фреймворка, установка необходимых пакетов, программирование с использованием API фреймворка, создание шаблонов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
@@ -125,7 +172,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Сайт расписания занятий и экзаменов ИВГПУ</h4>
+            <h4 class="portfolio-modal__title modal-title">Сайт расписания занятий и экзаменов ИВГПУ</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/rasp.png" alt="Сайт расписания занятий и экзаменов ИВГПУ"/>
@@ -134,7 +181,7 @@
               <dd><a href="http://rasp.ivgpu.com" target="_blank">http://rasp.ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Сайт расписания занятий и экзаменов ИВГПУ, где пользователь с помощью формы на главной странице может выбрать определенную учебную группу/преподавателя и найти соответствующее расписание занятий/экзаменов как на две недели, так и на определенный день. Полученное расписание можно скачать в формате <i>.xlsx.</i> <br> Пользователи, наделенные специальными правами, (администраторы) могут добавлять, изменять и удалять занятия для определенных учебных групп, а также некоторую другую информацию</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>Laravel</dd>
               <dt>Моя роль:</dt>
               <dd>Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и первоначальная настройка фреймворка, установка необходимых пакетов, программирование с использованием API фреймворка, создание шаблонов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
@@ -154,7 +201,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Сайт научной конференции &quot;SMARTEX&quot;</h4>
+            <h4 class="portfolio-modal__title modal-title">Сайт научной конференции &quot;SMARTEX&quot;</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/smartex.png" alt="Сайт научной конференции &quot;SMARTEX&quot;"/>
@@ -163,7 +210,7 @@
               <dd><a href="http://smartex2.ivgpu.com" target="_blank">http://smartex2.ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Сайт научной конференции "SMARTEX"</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>WordPress</dd>
               <dt>Моя роль:</dt>
               <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
@@ -183,7 +230,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Сайт научной конференции &quot;ПОИСК&quot;</h4>
+            <h4 class="portfolio-modal__title modal-title">Сайт научной конференции &quot;ПОИСК&quot;</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/poisk.png" alt="Сайт научной конференции &quot;ПОИСК&quot;"/>
@@ -192,7 +239,7 @@
               <dd><a href="http://poisk.ivgpu.com" target="_blank">http://poisk.ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Сайт научной конференции "ПОИСК"</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>WordPress</dd>
               <dt>Моя роль:</dt>
               <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
@@ -212,7 +259,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Сайт научной конференции &quot;Информационная среда вуза&quot;</h4>
+            <h4 class="portfolio-modal__title modal-title">Сайт научной конференции &quot;Информационная среда вуза&quot;</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/isv.png" alt="Сайт научной конференции &quot;Информационная среда вуза&quot;"/>
@@ -221,7 +268,7 @@
               <dd><a href="http://isv.ivgpu.com" target="_blank">http://isv.ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Сайт научной конференции "Информационная среда вуза"</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>WordPress</dd>
               <dt>Моя роль:</dt>
               <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
@@ -241,7 +288,7 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Сайт научной конференции &quot;Генезис&quot;</h4>
+            <h4 class="portfolio-modal__title modal-title">Сайт научной конференции &quot;Генезис&quot;</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/genesis.png" alt="Сайт научной конференции &quot;Генезис&quot;"/>
@@ -250,7 +297,7 @@
               <dd><a href="http://genesis.ivgpu.com" target="_blank">http://genesis.ivgpu.com</a></dd>
               <dt>Описание:</dt>
               <dd>Сайт научной конференции "Генезис"</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>WordPress</dd>
               <dt>Моя роль:</dt>
               <dd>Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка</dd>
@@ -270,16 +317,16 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Верстка лендингов по psd шаблонам</h4>
+            <h4 class="portfolio-modal__title modal-title">Верстка лендингов по psd шаблонам</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/axit.png" alt="Верстка лендингов по psd шаблонам"/>
             <dl>
               <dt>Ссылка:</dt>
-              <dd><a href="/portfolio/axit/index.html" target="_blank">/portfolio/axit/index.html</a></dd>
+              <dd><a href="https://romanjke.github.io/portfolio/axit/index.html" target="_blank">https://romanjke.github.io/portfolio/axit/index.html</a></dd>
               <dt>Описание:</dt>
               <dd>Верстка лендингов по psd шаблонам</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>HTML</dd>
               <dt>Моя роль:</dt>
               <dd>Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git</dd>
@@ -299,16 +346,16 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Верстка лендингов по psd шаблонам</h4>
+            <h4 class="portfolio-modal__title modal-title">Верстка лендингов по psd шаблонам</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/fudi.png" alt="Верстка лендингов по psd шаблонам"/>
             <dl>
               <dt>Ссылка:</dt>
-              <dd><a href="/portfolio/fudi/index.html" target="_blank">/portfolio/fudi/index.html</a></dd>
+              <dd><a href="https://romanjke.github.io/portfolio/fudi/index.html" target="_blank">https://romanjke.github.io/portfolio/fudi/index.html</a></dd>
               <dt>Описание:</dt>
               <dd>Верстка лендингов по psd шаблонам</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>HTML</dd>
               <dt>Моя роль:</dt>
               <dd>Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git</dd>
@@ -328,16 +375,16 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Тестовое задание от веб-студии Uberweb</h4>
+            <h4 class="portfolio-modal__title modal-title">Тестовое задание от веб-студии Uberweb</h4>
             <button class="close" type="button" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body"><img class="portfolio-modal__image" src="img/uberweb.png" alt="Тестовое задание от веб-студии Uberweb"/>
             <dl>
               <dt>Ссылка:</dt>
-              <dd><a href="/portfolio/uberweb/index.html" target="_blank">/portfolio/uberweb/index.html</a></dd>
+              <dd><a href="https://romanjke.github.io/portfolio/uberweb/index.html" target="_blank">https://romanjke.github.io/portfolio/uberweb/index.html</a></dd>
               <dt>Описание:</dt>
               <dd>Тестовое задание от веб-студии Uberweb</dd>
-              <dt>CMS/Framework:</dt>
+              <dt>Платформа:</dt>
               <dd>HTML</dd>
               <dt>Моя роль:</dt>
               <dd>Адаптивная верстка лендинга по psd макету</dd>

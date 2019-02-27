@@ -1,4 +1,8 @@
 .portfolio-modal {
+    &__title {
+        font-family: $sec-font;
+    }
+
     &__image {
         display: block;
         width: 80%;

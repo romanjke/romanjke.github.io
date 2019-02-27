@@ -389,8 +389,8 @@ ol {
 }*/
 .title {
   position: relative;
-  margin: 0 0 50px;
-  font-family: Raleway, sans-serif;
+  margin: 0 0 40px;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase; }
@@ -401,7 +401,7 @@ ol {
     background: #f57365;
     width: 88px;
     height: 2px;
-    bottom: -15px; }
+    bottom: -10px; }
   .title_center {
     text-align: center; }
     .title_center:after {
@@ -447,8 +447,25 @@ ol {
   font-style: italic;
   font-weight: 700; }
 
-.portfolio {
+.skills {
   padding: 80px 0; }
+  .skills__part:first-child {
+    margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .skills__part:first-child {
+      margin-bottom: 0; } }
+  .skills__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 20px; }
+  .skills__item {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.portfolio {
+  padding: 80px 0;
+  background: #f7f7f7; }
   .portfolio__list {
     text-align: center; }
   .portfolio__item {
@@ -521,6 +538,9 @@ ol {
       width: 2px;
       height: 20px;
       background: #f57365; }
+
+.portfolio-modal__title {
+  font-family: "Montserrat", sans-serif; }
 
 .portfolio-modal__image {
   display: block;

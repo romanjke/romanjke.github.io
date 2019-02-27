@@ -1,0 +1,14 @@
+mixin skills(skills)
+    section.skills
+        .container
+            h2.title.title_center Навыки
+
+            .row
+                each skills_block in skills
+                    .col-md-6.skills__part
+                        each skill, index in skills_block
+                            if index == 0
+                                h3.skills__title= skill
+                            else
+                                .skills__item.progress(style="height: 35px;")
+                                    .progress-bar.bg-danger.animated.fadeInLeft(role="progressbar" style="width:" + skill.percentage + "%" aria-valuenow=skill.percentage aria-valuemin="0" aria-valuemax="100")= skill.name + " " + skill.percentage + "%"

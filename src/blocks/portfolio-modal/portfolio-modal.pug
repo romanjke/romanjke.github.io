@@ -5,7 +5,7 @@ mixin modal(work, id)
             // Modal content
             .modal-content
                 .modal-header
-                    h4(class="modal-title")= work.name
+                    h4(class="portfolio-modal__title modal-title")= work.name
                     button(type="button" class="close" data-dismiss="modal") &times;
 
                 .modal-body
@@ -19,7 +19,7 @@ mixin modal(work, id)
                         dt Описание:
                         dd !{work.desc}
 
-                        dt CMS/Framework:
+                        dt Платформа:
                         dd= work.base
 
                         dt Моя роль:

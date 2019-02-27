@@ -6,7 +6,7 @@
 
 .title {
     position: relative;
-    margin: 0 0 50px;
+    margin: 0 0 40px;
     font-family: $sec-font;
     font-size: 1.5rem;
     font-weight: 400;
@@ -18,7 +18,7 @@
         background: $main-color;
         width: 88px;
         height: 2px;
-        bottom: -15px;
+        bottom: -10px;
     }
 
     &_center {

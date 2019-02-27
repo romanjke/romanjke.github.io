@@ -1,4 +1,5 @@
 include head/head
+include skills/skills
 include portfolio/portfolio
 include portfolio-modal/portfolio-modal
 
@@ -13,6 +14,40 @@ html(lang="ru")
             })
 
         body
+            block skills
+                -
+                    var skills = [
+                        [
+                            'Технологии',
+                            {name: 'HTML5',
+                            percentage: '80'},
+                            {name: 'CSS3',
+                            percentage: '80'},
+                            {name: 'jQuery',
+                            percentage: '60'},
+                            {name: 'PHP',
+                            percentage: '60'},
+                            {name: 'MySQL',
+                            percentage: '70'},
+                            {name: 'Git',
+                            percentage: '80'},
+                        ],
+                        [
+                            'Платформы',
+                            {name: '1С-Битрикс',
+                            percentage: '80'},
+                            {name: 'Laravel',
+                            percentage: '80'},
+                            {name: 'Joomla',
+                            percentage: '65'},
+                            {name: 'WordPress',
+                            percentage: '40'},
+                            {name: 'phpBBex',
+                            percentage: '40'},
+                        ]
+                    ];
+
+                +skills(skills)
 
             block portfolio
                 -
@@ -93,21 +128,21 @@ html(lang="ru")
                                     role: 'Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'genesis.png'},
 
-                                    {link: '/portfolio/axit/index.html',
+                                    {link: 'https://romanjke.github.io/portfolio/axit/index.html',
                                     name: 'Верстка лендингов по psd шаблонам',
                                     desc: 'Верстка лендингов по psd шаблонам',
                                     base: 'HTML',
                                     role: 'Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git',
                                     img: 'axit.png'},
 
-                                    {link: '/portfolio/fudi/index.html',
+                                    {link: 'https://romanjke.github.io/portfolio/fudi/index.html',
                                     name: 'Верстка лендингов по psd шаблонам',
                                     desc: 'Верстка лендингов по psd шаблонам',
                                     base: 'HTML',
                                     role: 'Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git',
                                     img: 'fudi.png'},
 
-                                    {link: '/portfolio/uberweb/index.html',
+                                    {link: 'https://romanjke.github.io/portfolio/uberweb/index.html',
                                     name: 'Тестовое задание от веб-студии Uberweb',
                                     desc: 'Тестовое задание от веб-студии Uberweb',
                                     base: 'HTML',

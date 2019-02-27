@@ -1,0 +1,27 @@
+.skills{
+    padding: 80px 0;
+
+    &__part {
+        &:first-child {
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-family: $sec-font;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
