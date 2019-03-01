@@ -1,7 +1,3 @@
-// Init WOW JavaScript
-(function($) {
-    new WOW().init();
-})(jQuery);
 // Main navigation
 (function($) {
   "use strict"; // Start of use strict

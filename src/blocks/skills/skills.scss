@@ -1,6 +1,4 @@
 .skills{
-    padding: 80px 0;
-
     &__part {
         &:first-child {
             margin-bottom: 40px;
@@ -15,13 +13,14 @@
 
     &__title {
         font-family: $sec-font;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-bottom: 20px;
     }
 
     &__item {
         margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
         text-transform: uppercase;
-        font-weight: bold;
     }
 }

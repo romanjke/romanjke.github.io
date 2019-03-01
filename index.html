@@ -7,101 +7,136 @@
     <meta content="Портфолио" name="description"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700"/>
+    <!-- Custom fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Open+Sans:300,400,700|Pattaya&amp;amp;subset=cyrillic"/>
+    <!-- Bootstrap core CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <!-- Animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <!-- Custom styles-->
     <!-- build:css css/main.css-->
     <link rel="stylesheet" href="css/main.css"/>
     <!-- endbuild-->
   </head>
-  <body>
-    <section class="skills">
+  <body id="page-top">
+    <!-- Main navigation-->
+    <nav class="main-nav navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+      <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Роман Смирнов</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="svg-icon svg-icon-menu">
+            <use xlink:href="img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Навыки</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main navigation end-->
+    <header class="hero">
+      <div class="wrap">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title wow animated zoomIn">Роман Смирнов</h1>
+            <ul class="hero__specs wow animated zoomIn" data-wow-delay=".2s">
+              <li class="hero__spec">Web-разработчик</li>
+              <li class="hero__spec">HTML-верстальщик</li>
+            </ul><a class="btn btn-danger hero__button js-scroll-trigger wow animated bounceIn" href="#skills" data-wow-delay=".5s">Обо мне</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section skills" id="skills">
       <div class="container">
         <h2 class="title title_center">Навыки</h2>
         <div class="row">
           <div class="col-md-6 skills__part">
             <h3 class="skills__title">Технологии</h3>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML5 80%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML5 80%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS3 80%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS3 80%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">jQuery 60%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">jQuery 60%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">PHP 60%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">PHP 60%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">MySQL 70%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">MySQL 70%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Git 80%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Git 80%</div>
             </div>
           </div>
           <div class="col-md-6 skills__part">
             <h3 class="skills__title">Платформы</h3>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">1С-Битрикс 80%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">1С-Битрикс 80%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Laravel 80%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Laravel 80%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Joomla 65%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Joomla 65%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">WordPress 40%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">WordPress 40%</div>
             </div>
             <div class="skills__item progress" style="height: 35px;">
-              <div class="progress-bar bg-danger animated fadeInLeft" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">phpBBex 40%</div>
+              <div class="progress-bar bg-danger wow animated fadeInLeft" role="progressbar" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">phpBBex 40%</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="section portfolio" id="portfolio">
       <div class="container">
         <h2 class="title title_center">Портфолио</h2>
         <div class="row portfolio__list">
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-0"><img class="portfolio__image" src="img/ivgpu.png" alt="Официальный сайт ИВГПУ"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-0"><img class="portfolio__image" src="img/ivgpu.png" alt="Официальный сайт ИВГПУ"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Официальный сайт ИВГПУ</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-1"><img class="portfolio__image" src="img/ds.png" alt="Сайт диссертационных советов ИВГПУ"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.2s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-1"><img class="portfolio__image" src="img/ds.png" alt="Сайт диссертационных советов ИВГПУ"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Сайт диссертационных советов ИВГПУ</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-2"><img class="portfolio__image" src="img/rasp.png" alt="Сайт расписания занятий и экзаменов ИВГПУ"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.3s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-2"><img class="portfolio__image" src="img/rasp.png" alt="Сайт расписания занятий и экзаменов ИВГПУ"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Сайт расписания занятий и экзаменов ИВГПУ</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-3"><img class="portfolio__image" src="img/smartex.png" alt="Сайт научной конференции &quot;SMARTEX&quot;"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.4s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-3"><img class="portfolio__image" src="img/smartex.png" alt="Сайт научной конференции &quot;SMARTEX&quot;"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Сайт научной конференции &quot;SMARTEX&quot;</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-4"><img class="portfolio__image" src="img/poisk.png" alt="Сайт научной конференции &quot;ПОИСК&quot;"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.5s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-4"><img class="portfolio__image" src="img/poisk.png" alt="Сайт научной конференции &quot;ПОИСК&quot;"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Сайт научной конференции &quot;ПОИСК&quot;</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-5"><img class="portfolio__image" src="img/isv.png" alt="Сайт научной конференции &quot;Информационная среда вуза&quot;"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.6s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-5"><img class="portfolio__image" src="img/isv.png" alt="Сайт научной конференции &quot;Информационная среда вуза&quot;"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Сайт научной конференции &quot;Информационная среда вуза&quot;</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-6"><img class="portfolio__image" src="img/genesis.png" alt="Сайт научной конференции &quot;Генезис&quot;"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.7s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-6"><img class="portfolio__image" src="img/genesis.png" alt="Сайт научной конференции &quot;Генезис&quot;"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Сайт научной конференции &quot;Генезис&quot;</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-7"><img class="portfolio__image" src="img/axit.png" alt="Верстка лендингов по psd шаблонам"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.8s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-7"><img class="portfolio__image" src="img/axit.png" alt="Верстка лендингов по psd шаблонам"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Верстка лендингов по psd шаблонам</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-8"><img class="portfolio__image" src="img/fudi.png" alt="Верстка лендингов по psd шаблонам"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.9s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-8"><img class="portfolio__image" src="img/fudi.png" alt="Верстка лендингов по psd шаблонам"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Верстка лендингов по psd шаблонам</div>
               </div></a></div>
-          <div class="col-md-6 col-lg-4"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-9"><img class="portfolio__image" src="img/uberweb.png" alt="Тестовое задание от веб-студии Uberweb"/>
+          <div class="col-md-6 col-lg-4 wow animated fadeInUp" data-wow-delay="0.10s"><a class="portfolio__item" href="#" data-toggle="modal" data-target="#modal-9"><img class="portfolio__image" src="img/uberweb.png" alt="Тестовое задание от веб-студии Uberweb"/>
               <div class="portfolio__over">
                 <div class="portfolio__name">Тестовое задание от веб-студии Uberweb</div>
               </div></a></div>
@@ -398,9 +433,14 @@
       </div>
     </div>
     <!-- Modal End-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- JavaScript plugins-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Custom styles-->
     <!-- build:js js/main.js-->
     <script src="js/main.js"></script>
     <!-- endbuild-->

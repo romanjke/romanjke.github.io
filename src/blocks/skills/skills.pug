@@ -1,5 +1,5 @@
 mixin skills(skills)
-    section.skills
+    section.section.skills#skills
         .container
             h2.title.title_center Навыки
 
@@ -11,4 +11,4 @@ mixin skills(skills)
                                 h3.skills__title= skill
                             else
                                 .skills__item.progress(style="height: 35px;")
-                                    .progress-bar.bg-danger.animated.fadeInLeft(role="progressbar" style="width:" + skill.percentage + "%" aria-valuenow=skill.percentage aria-valuemin="0" aria-valuemax="100")= skill.name + " " + skill.percentage + "%"
+                                    .progress-bar.bg-danger.wow.animated.fadeInLeft(role="progressbar" style="width:" + skill.percentage + "%" aria-valuenow=skill.percentage aria-valuemin="0" aria-valuemax="100")= skill.name + " " + skill.percentage + "%"

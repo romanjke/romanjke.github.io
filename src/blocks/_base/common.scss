@@ -4,11 +4,15 @@
     padding: 0 15px;
 }*/
 
+.section {
+    padding: 100px 0;
+}
+
 .title {
     position: relative;
-    margin: 0 0 40px;
+    margin: 0 0 80px;
     font-family: $sec-font;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: 400;
     text-transform: uppercase;
 
@@ -16,7 +20,7 @@
         content: '';
         @include left();
         background: $main-color;
-        width: 88px;
+        width: 80px;
         height: 2px;
         bottom: -10px;
     }

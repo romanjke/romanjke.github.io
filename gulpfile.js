@@ -81,9 +81,12 @@ gulp.task('svgSpriteBuild', function () {
 		.pipe(svgmin({
 			js2svg: {
 				pretty: true
-			}
+			},
+			plugins: [{
+                removeViewBox: false
+            }]
 		}))
-		// remove all fill and style declarations in out shapes
+		// // remove all fill and style declarations in out shapes
 		.pipe(cheerio({
 			run: function ($) {
 				$('[fill]').removeAttr('fill');
@@ -166,7 +169,7 @@ gulp.task('useref', function() {
 );
 
 //copy images to output directory
-gulp.task('imgBuild', function() {
+gulp.task('img', function() {
 	return gulp.src(paths.img)
 		.pipe(imagemin())
 		.pipe(gulp.dest('img/'));
@@ -174,7 +177,7 @@ gulp.task('imgBuild', function() {
 );
 
 //copy fonts to output directory
-gulp.task('fontsBuild', function() {
+gulp.task('fonts', function() {
 	return gulp.src(paths.fonts)
 		.pipe(gulp.dest('fonts/'));
 	}
@@ -184,7 +187,7 @@ gulp.task('fontsBuild', function() {
 //default
 gulp.task('default', gulp.series(
 		gulp.parallel('sprite:png', 'svgSpriteBuild'),
-		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild'),
+		gulp.parallel('pug', 'sass', 'scripts', 'img', 'fonts'),
 		gulp.parallel('watch', 'browser-sync')
 	)
 );
@@ -193,7 +196,7 @@ gulp.task('default', gulp.series(
 gulp.task('prod', gulp.series(
 		'clean',
 		gulp.parallel('sprite:png', 'svgSpriteBuild'),
-		gulp.parallel('pug', 'sass', 'scripts', 'imgBuild', 'fontsBuild'),
+		gulp.parallel('pug', 'sass', 'scripts', 'img', 'fonts'),
 		'useref'
 	)
 );
