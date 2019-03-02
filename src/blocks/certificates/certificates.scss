@@ -1,0 +1,50 @@
+.certificates {
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        max-width: 200px;
+        margin: 0 auto 0.75rem;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+
+            .certificates__over {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__over {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background: rgba(4, 3, 3, 0.68);
+        opacity: 0;
+        transition: .5s ease;
+        overflow: hidden;
+    }
+}

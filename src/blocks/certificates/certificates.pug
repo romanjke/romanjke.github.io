@@ -1,0 +1,20 @@
+mixin certificates(certs)
+    section.section.certificates
+        .container
+            h2.title.title_level_2.title_center Сертификаты
+
+            each cert_block, index_block in certs
+                .certificates__block
+                    h3.title.title_level_3= cert_block[0]
+                    .row
+                        each cert, index_cert in cert_block
+                            if index_cert > 0
+                                .col-sm-6.col-lg-3.wow.animated.fadeInUp(data-wow-delay="0." + index_cert + "s")
+                                    .certificates__item
+                                        a(href="#" class="certificates__link" data-toggle="modal" data-target="#cert_modal-" + index_block + index_cert target="_blank")
+                                            img(src="img/" + cert.img class="certificates__image" alt=cert.name)
+
+                                            .certificates__over
+                                                i.fas.fa-search-plus.fa-3x
+
+                                        p= cert.name

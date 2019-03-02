@@ -10,19 +10,37 @@
 
 .title {
     position: relative;
-    margin: 0 0 80px;
     font-family: $sec-font;
-    font-size: 2.25rem;
     font-weight: 400;
-    text-transform: uppercase;
 
-    &:after {
-        content: '';
-        @include left();
-        background: $main-color;
-        width: 80px;
-        height: 2px;
-        bottom: -10px;
+    &_level_1 {
+
+    }
+
+    &_level_2 {
+        margin: 0 0 80px;
+        font-size: 2.25rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:after {
+            content: '';
+            @include center-x();
+            background: $main-color;
+            width: 80px;
+            height: 2px;
+            bottom: -10px;
+        }
+    }
+
+    &_level_3 {
+        margin: 0 0 2.5rem;
+        font-size: 1.75rem;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            text-align: left;
+        }
     }
 
     &_center {

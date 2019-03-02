@@ -1,0 +1,12 @@
+mixin cert-modal(cert, id)
+    // Certificate modal
+    .certificate-modal.modal.fade(id=id role="dialog")
+        .modal-dialog.modal-dialog-centered
+            // Modal content
+            .modal-content
+                .modal-body
+                    .clearfix
+                        button(type="button" class="close certificate-modal__close" data-dismiss="modal") &times;
+                    img(src="img/" + cert.img class="certificate-modal__image" alt=cert.name)
+            // Modal content end
+    // Certificate modal end

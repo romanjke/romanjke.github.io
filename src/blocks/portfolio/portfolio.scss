@@ -8,9 +8,10 @@
     &__item {
         position: relative;
         display: block;
-        margin: 15px 0;
+        max-width: 350px;
+        margin: 15px auto;
         border: 1px solid rgba(0,0,0,.12);
-        border-radius: 8px;
+        border-radius: 5px;
         overflow: hidden;
         color: #fff;
 
@@ -27,7 +28,7 @@
     }
 
     &__image {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 

@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background: #fff url(../img/hero-bg.jpg) center/cover no-repeat;
+    background: darken(#212529, 5%) url(../img/hero-bg.jpg) center/cover no-repeat;
     color: #fff;
 
     &__content {

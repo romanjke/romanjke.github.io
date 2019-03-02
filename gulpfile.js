@@ -135,8 +135,8 @@ gulp.task('watch', function() {
 	gulp.watch(paths.blocks + '**/*.pug', gulp.series('pug'));
 	gulp.watch(paths.blocks + '**/*.scss', gulp.series('sass'));
 	gulp.watch(paths.blocks + '**/*.js', gulp.series('scripts'));
-	gulp.watch(paths.img, gulp.series('imgBuild'));
-	gulp.watch(paths.fonts, gulp.series('fontsBuild'));
+	gulp.watch(paths.img, gulp.series('img'));
+	gulp.watch(paths.fonts, gulp.series('fonts'));
 	gulp.watch(paths.icons + '*.png', gulp.series('sprite:png'));
 	gulp.watch(paths.icons + '*.svg', gulp.series('svgSpriteBuild'));
 	// gulp.watch(paths.blocks + 'svg-icon/svg-sprite-template.scss', gulp.series('svgSpriteSass'));

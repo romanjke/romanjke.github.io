@@ -1,6 +1,0 @@
-mixin svg-icon(name,color,pos)
-    - color = color ? ' svg-icon_' + color : ''
-    - pos = pos ? ' svg-icon_' + pos : ''
-
-    svg(class="svg-icon svg-icon-" + name + color + pos)
-        use(xlink:href="img/sprite.svg#" + name)

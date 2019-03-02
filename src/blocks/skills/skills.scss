@@ -11,16 +11,59 @@
         }
     }
 
-    &__title {
-        font-family: $sec-font;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
-
     &__item {
         margin-bottom: 1rem;
-        font-size: 1rem;
+        font-size: 0.75rem;
         font-weight: 400;
-        text-transform: uppercase;
+
+        @media (min-width: 576px) {
+            font-size: 1rem;
+        }
+    }
+
+    &__bar {
+        &_html {
+            background-color: #F16524;
+        }
+
+        &_css {
+            background-color: #33A9DC;
+        }
+
+        &_jquery {
+            background-color: #0868AB;
+        }
+
+        &_php {
+            background-color: #7377AD;
+        }
+
+        &_mysql {
+            background-color: #4479A1;
+        }
+
+        &_git {
+            background-color: #F44D27;
+        }
+
+        &_bitrix {
+            background-color: #C00C2E;
+        }
+
+        &_laravel {
+            background-color: #f4645f;
+        }
+
+        &_joomla {
+            background-color: #175388;
+        }
+
+        &_wordpress {
+            background-color: #30353A;
+        }
+
+        &_phpbbex {
+            background-color: #0a3e89;
+        }
     }
 }

@@ -4,7 +4,8 @@ include hero/hero
 include skills/skills
 include portfolio/portfolio
 include portfolio-modal/portfolio-modal
-include svg-icon/svg-icon
+include certificates/certificates
+include certificate-modal/certificate-modal
 
 doctype html
 html(lang="ru")
@@ -29,30 +30,41 @@ html(lang="ru")
                         [
                             'Технологии',
                             {name: 'HTML5',
-                            percentage: '80'},
+                            percentage: '80',
+                            style: 'html'},
                             {name: 'CSS3',
-                            percentage: '80'},
+                            percentage: '80',
+                            style: 'css'},
                             {name: 'jQuery',
-                            percentage: '60'},
+                            percentage: '60',
+                            style: 'jquery'},
                             {name: 'PHP',
-                            percentage: '60'},
+                            percentage: '60',
+                            style: 'php'},
                             {name: 'MySQL',
-                            percentage: '70'},
+                            percentage: '70',
+                            style: 'mysql'},
                             {name: 'Git',
-                            percentage: '80'},
+                            percentage: '80',
+                            style: 'git'},
                         ],
                         [
                             'Платформы',
                             {name: '1С-Битрикс',
-                            percentage: '80'},
+                            percentage: '80',
+                            style: 'bitrix'},
                             {name: 'Laravel',
-                            percentage: '80'},
+                            percentage: '80',
+                            style: 'laravel'},
                             {name: 'Joomla',
-                            percentage: '65'},
+                            percentage: '65',
+                            style: 'joomla'},
                             {name: 'WordPress',
-                            percentage: '40'},
+                            percentage: '40',
+                            style: 'wordpress'},
                             {name: 'phpBBex',
-                            percentage: '40'},
+                            percentage: '40',
+                            style: 'phpbbex'},
                         ]
                     ];
 
@@ -85,7 +97,64 @@ html(lang="ru")
 
                 +portfolio(works_names)
 
-            block modals
+            block certificates
+                -
+                    var certs = [
+                                    [
+                                        'Сертификаты 1С-Битрикс',
+
+                                        {img:'ustanovka-i-nastrojka.jpg',
+                                        name: 'Установка и настройка'},
+
+                                        {img:'kontent-menedzher.jpg',
+                                        name: 'Контент-менеджер'},
+
+                                        {img:'administrator-bazovyj.jpg',
+                                        name: 'Администратор. Базовый'},
+
+                                        {img:'administrator-moduli.jpg',
+                                        name: 'Администратор. Модули'},
+
+                                        {img:'administrator-biznes.jpg',
+                                        name: 'Администратор. Бизнес'},
+
+                                        {img:'razrabotchik-bitrix-framework.jpg',
+                                        name: 'Разработчик Bitrix Framework'},
+
+                                        {img:'tekhnologiya-kompozitnyj-sajt.jpg',
+                                        name: 'Технология Композитный сайт'}
+                                    ],
+                                    [
+                                        'Сертификаты 1С-Битрикс',
+
+                                        {img:'ustanovka-i-nastrojka.jpg',
+                                        name: 'Установка и настройка'},
+
+                                        {img:'kontent-menedzher.jpg',
+                                        name: 'Контент-менеджер'},
+
+                                        {img:'administrator-bazovyj.jpg',
+                                        name: 'Администратор. Базовый'},
+
+                                        {img:'administrator-moduli.jpg',
+                                        name: 'Администратор. Модули'},
+
+                                        {img:'administrator-biznes.jpg',
+                                        name: 'Администратор. Бизнес'},
+
+                                        {img:'razrabotchik-bitrix-framework.jpg',
+                                        name: 'Разработчик Bitrix Framework'},
+
+                                        {img:'tekhnologiya-kompozitnyj-sajt.jpg',
+                                        name: 'Технология Композитный сайт'}
+                                    ]
+                    ];
+
+                +certificates(certs)
+
+            block footer
+
+            block portfolio-modals
                 -
                     var works = [
                                     {link: 'http://ivgpu.com',
@@ -162,9 +231,18 @@ html(lang="ru")
                     ];
 
                 each work, index in works
-                    - var id = "modal-" + index
+                    - var id = "portfolio_modal-" + index
 
-                    +modal(work, id)
+                    +portfolio-modal(work, id)
+
+            block cert-modals
+
+                each cert_block, index_block in certs
+                    each cert, index_cert in cert_block
+                        if index_cert > 0
+                            - var id = "cert_modal-" + index_block + index_cert
+
+                            +cert-modal(cert, id)
 
             block scripts
                 // Bootstrap core JavaScript
