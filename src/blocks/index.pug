@@ -6,6 +6,8 @@ include portfolio/portfolio
 include portfolio-modal/portfolio-modal
 include certificates/certificates
 include certificate-modal/certificate-modal
+include contacts/contacts
+include footer/footer
 
 doctype html
 html(lang="ru")
@@ -18,8 +20,23 @@ html(lang="ru")
             })
 
         body#page-top
+            -
+                var menu = {
+                    brand: 'Роман Смирнов',
+                    links: [
+                        {alias: 'skills',
+                        name: 'Навыки'},
+                        {alias: 'portfolio',
+                        name: 'Портфолио'},
+                        {alias: 'certificates',
+                        name: 'Сертификаты'},
+                        {alias: 'contacts',
+                        name: 'Контакты'},
+                    ]
+                }
+
             block main-nav
-                +main-nav()
+                +main-nav(menu)
 
             block hero
                 +hero()
@@ -152,7 +169,22 @@ html(lang="ru")
 
                 +certificates(certs)
 
+            block contacts
+                -
+                    var contacts = [
+                                        {name: 'romanjkez0r@gmail.com',
+                                        link: 'mailto:romanjkez0r@gmail.com',
+                                        class: 'far fa-envelope fa-4x'},
+
+                                        {name: 'romanjke',
+                                        link: 'https://github.com/romanjke',
+                                        class: 'fab fa-github fa-4x'}
+                    ];
+
+                +contacts(contacts)
+
             block footer
+                +footer()
 
             block portfolio-modals
                 -

@@ -1,0 +1,19 @@
+.contacts {
+    background-color: $dark-section-bg;
+
+    &__items {
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: $sec-color;
+
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,16 +1,13 @@
-mixin main-nav()
+mixin main-nav(menu)
     // Main navigation
     nav.main-nav.navbar.navbar-expand-lg.navbar-dark.fixed-top#main-nav
         .container
-            a.navbar-brand.js-scroll-trigger(href="#page-top") Роман Смирнов
+            a.navbar-brand.js-scroll-trigger(href="#page-top")= menu.brand
             button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
                 i.fas.fa-bars.fa-2x
             .collapse.navbar-collapse#navbarResponsive
                 ul.navbar-nav.text-uppercase.ml-auto
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href="#skills") Навыки
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href="#portfolio") Портфолио
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href="#contacts") Контакты
+                    each link in menu.links
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href="#" + link.alias)= link.name
     // Main navigation end

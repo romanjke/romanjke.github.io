@@ -1,0 +1,22 @@
+.footer {
+    padding: 25px 0 13px;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fff;
+    background-color: darken($sec-color, 5%);
+
+
+    &__copy {
+        margin-bottom: 0.75rem;
+
+        @media (min-width: 576px) {
+            text-align: left;
+        }
+    }
+
+    &__credits {
+        @media (min-width: 576px) {
+            text-align: right;
+        }
+    }
+}

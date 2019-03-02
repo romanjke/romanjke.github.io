@@ -1,0 +1,12 @@
+mixin contacts(contacts)
+    section.section.contacts#contacts
+        .container
+            h2.title.title_level_2 Контакты
+
+            .row.contacts__items
+                each contact, index in contacts
+                    .col-sm-6.wow.animated.bounceIn(data-wow-delay="0." + (index+1) + "s")
+                        a(href=contact.link class="contacts__item" target="_blank")
+                            i(class=contact.class)
+                            p= contact.name
+

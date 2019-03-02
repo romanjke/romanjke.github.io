@@ -1,6 +1,6 @@
 // Main navigation
 .main-nav {
-    background-color: #212529;
+    background-color: $sec-color;
     border-bottom: 1px solid $main-color;
 
     .navbar-toggler {
@@ -75,7 +75,7 @@
         &.navbar-shrink {
             padding-top: 0;
             padding-bottom: 0;
-            background-color: #212529;
+            background-color: $sec-color;
             border-bottom: 1px solid $main-color;
 
             .navbar-brand {
