@@ -13,17 +13,20 @@ mixin portfolio-modal(work, id)
 
                     dl
                         dt Ссылка:
-                        dd
-                            a(href=work.link target="_blank")= work.link
+                        dd: a(href=work.link target="_blank")= work.link
 
                         dt Описание:
                         dd !{work.desc}
 
                         dt Платформа:
-                        dd= work.platform
+                        dd: i= work.platform
 
                         dt Моя роль:
                         dd !{work.role}
+
+                        if work.source
+                            dt Исходники:
+                            dd: a(href=work.source target="_blank")= work.source
 
 
                 .modal-footer

@@ -89,10 +89,9 @@ gulp.task('browser-sync', function() {
 	});
 });
 
-
 //clean
 gulp.task('clean', function(cb) {
-	rimraf('./', cb);
+	rimraf('{css,img,js,index.html}', cb);
 });
 
 //css + js
