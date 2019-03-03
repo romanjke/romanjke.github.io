@@ -20,13 +20,13 @@ mixin portfolio-modal(work, id)
                         dd !{work.desc}
 
                         dt Платформа:
-                        dd= work.base
+                        dd= work.platform
 
                         dt Моя роль:
                         dd !{work.role}
 
 
                 .modal-footer
-                    button(type="button" class="btn btn-light" data-dismiss="modal") Закрыть
-            // Modal content End
-    // Portfolio modal End
+                    button(type="button" class="portfolio-modal__button btn btn-light" data-dismiss="modal") Закрыть
+            // Modal content end
+    // Portfolio modal end

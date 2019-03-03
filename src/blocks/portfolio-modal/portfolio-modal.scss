@@ -1,3 +1,4 @@
+// Portfolio modal
 .portfolio-modal {
     &__title {
         font-family: $sec-font;
@@ -5,8 +6,19 @@
 
     &__image {
         display: block;
-        width: 80%;
+        max-width: 80%;
         height: auto;
         margin: 0 auto 30px;
     }
+
+    &__button {
+        background-color: #fff;
+        border-color: #ccc;
+
+        &:hover {
+            background-color: #e6e6e6;
+            border-color: #adadad;
+        }
+    }
 }
+// Portfolio modal end

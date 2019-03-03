@@ -1,15 +1,16 @@
+// Footer
 .footer {
-    padding: 25px 0 13px;
+    padding: 25px 0;
     font-size: 0.75rem;
     text-align: center;
-    color: #fff;
+    color: darken(#fff, 15%);
     background-color: darken($sec-color, 5%);
-
 
     &__copy {
         margin-bottom: 0.75rem;
 
         @media (min-width: 576px) {
+            margin-bottom: 0;
             text-align: left;
         }
     }
@@ -19,4 +20,13 @@
             text-align: right;
         }
     }
+
+    &__link {
+        color: darken(#fff, 40%);
+
+        &:hover {
+            color: $main-color;
+        }
+    }
 }
+// Footer end

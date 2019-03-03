@@ -14,9 +14,10 @@ html(lang="ru")
     block head
         head
             +head({
-                "title": "Портфолио",
-                "author": "Roman",
-                "description": "Портфолио"
+                "title": "Портфолио web-разработчика, html-верстальщика - Роман Смирнов",
+                "author": "Роман Смирнов",
+                "description": "Сайт-портфолио web-разработчика и html-верстальщика Романа Смирнова. В портфолио представлены работы по разработке сайтов на PHP и HTML-верстке.",
+                "keywords": "портфолио, web разработка, php разработка, верстка, html верстка, web разработчик, верстальщик, html верстальщик, создание сайтов, Иваново создать сайт"
             })
 
         body#page-top
@@ -33,7 +34,7 @@ html(lang="ru")
                         {alias: 'contacts',
                         name: 'Контакты'},
                     ]
-                }
+                };
 
             block main-nav
                 +main-nav(menu)
@@ -43,53 +44,51 @@ html(lang="ru")
 
             block skills
                 -
-                    var skills = [
-                        [
-                            'Технологии',
+                    var skills = {
+                        technologies: [
                             {name: 'HTML5',
                             percentage: '80',
-                            style: 'html'},
+                            class: 'html'},
                             {name: 'CSS3',
                             percentage: '80',
-                            style: 'css'},
+                            class: 'css'},
                             {name: 'jQuery',
                             percentage: '60',
-                            style: 'jquery'},
+                            class: 'jquery'},
                             {name: 'PHP',
                             percentage: '60',
-                            style: 'php'},
+                            class: 'php'},
                             {name: 'MySQL',
                             percentage: '70',
-                            style: 'mysql'},
+                            class: 'mysql'},
                             {name: 'Git',
                             percentage: '80',
-                            style: 'git'},
+                            class: 'git'},
                         ],
-                        [
-                            'Платформы',
+                        platforms: [
                             {name: '1С-Битрикс',
                             percentage: '80',
-                            style: 'bitrix'},
+                            class: 'bitrix'},
                             {name: 'Laravel',
                             percentage: '80',
-                            style: 'laravel'},
+                            class: 'laravel'},
                             {name: 'Joomla',
                             percentage: '65',
-                            style: 'joomla'},
+                            class: 'joomla'},
                             {name: 'WordPress',
                             percentage: '40',
-                            style: 'wordpress'},
+                            class: 'wordpress'},
                             {name: 'phpBBex',
                             percentage: '40',
-                            style: 'phpbbex'},
+                            class: 'phpbbex'},
                         ]
-                    ];
+                    };
 
                 +skills(skills)
 
             block portfolio
                 -
-                    var works_names = [
+                    var works = [
                         {name: 'Официальный сайт ИВГПУ',
                         img:'ivgpu.png'},
                         {name: 'Сайт диссертационных советов ИВГПУ',
@@ -112,59 +111,36 @@ html(lang="ru")
                         img:'uberweb.png'}
                     ];
 
-                +portfolio(works_names)
+                +portfolio(works)
 
             block certificates
                 -
                     var certs = [
-                                    [
-                                        'Сертификаты 1С-Битрикс',
+                        {
+                            company_name: 'Сертификаты 1С-Битрикс',
+                            certs: [
+                                {img:'ustanovka-i-nastrojka.jpg',
+                                name: 'Установка и настройка'},
 
-                                        {img:'ustanovka-i-nastrojka.jpg',
-                                        name: 'Установка и настройка'},
+                                {img:'kontent-menedzher.jpg',
+                                name: 'Контент-менеджер'},
 
-                                        {img:'kontent-menedzher.jpg',
-                                        name: 'Контент-менеджер'},
+                                {img:'administrator-bazovyj.jpg',
+                                name: 'Администратор. Базовый'},
 
-                                        {img:'administrator-bazovyj.jpg',
-                                        name: 'Администратор. Базовый'},
+                                {img:'administrator-moduli.jpg',
+                                name: 'Администратор. Модули'},
 
-                                        {img:'administrator-moduli.jpg',
-                                        name: 'Администратор. Модули'},
+                                {img:'administrator-biznes.jpg',
+                                name: 'Администратор. Бизнес'},
 
-                                        {img:'administrator-biznes.jpg',
-                                        name: 'Администратор. Бизнес'},
+                                {img:'razrabotchik-bitrix-framework.jpg',
+                                name: 'Разработчик Bitrix Framework'},
 
-                                        {img:'razrabotchik-bitrix-framework.jpg',
-                                        name: 'Разработчик Bitrix Framework'},
-
-                                        {img:'tekhnologiya-kompozitnyj-sajt.jpg',
-                                        name: 'Технология Композитный сайт'}
-                                    ],
-                                    [
-                                        'Сертификаты 1С-Битрикс',
-
-                                        {img:'ustanovka-i-nastrojka.jpg',
-                                        name: 'Установка и настройка'},
-
-                                        {img:'kontent-menedzher.jpg',
-                                        name: 'Контент-менеджер'},
-
-                                        {img:'administrator-bazovyj.jpg',
-                                        name: 'Администратор. Базовый'},
-
-                                        {img:'administrator-moduli.jpg',
-                                        name: 'Администратор. Модули'},
-
-                                        {img:'administrator-biznes.jpg',
-                                        name: 'Администратор. Бизнес'},
-
-                                        {img:'razrabotchik-bitrix-framework.jpg',
-                                        name: 'Разработчик Bitrix Framework'},
-
-                                        {img:'tekhnologiya-kompozitnyj-sajt.jpg',
-                                        name: 'Технология Композитный сайт'}
-                                    ]
+                                {img:'tekhnologiya-kompozitnyj-sajt.jpg',
+                                name: 'Технология Композитный сайт'}
+                            ]
+                        }
                     ];
 
                 +certificates(certs)
@@ -192,89 +168,92 @@ html(lang="ru")
                                     {link: 'http://ivgpu.com',
                                     name: 'Официальный сайт ИВГПУ',
                                     desc: 'Разработка нового официального сайта ИВГПУ',
-                                    base: 'Joomla',
+                                    platform: 'Joomla',
                                     role: 'Участие в совместной разработке. <br> Настройка CMS, установка и настройка плагинов, создание шаблонов, наполнение контентом, обработка изображений, дальнейшая поддержка',
                                     img: 'ivgpu.png'},
 
                                     {link: 'http://ds.ivgpu.com',
                                     name: 'Сайт диссертационных советов ИВГПУ',
                                     desc: 'Сайт диссертационных советов ИВГПУ, где размещается информация о представленных к защите, защищенных и добавленных в архив диссертациях, а также сведения о самих диссертационных советах и пр. <br> Пользователи, наделенные специальными правами, (администраторы) могут добавлять, изменять и удалять диссертации/диссертационные советы',
-                                    base: 'Laravel',
+                                    platform: 'Laravel',
                                     role: 'Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и первоначальная настройка фреймворка, установка необходимых пакетов, программирование с использованием API фреймворка, создание шаблонов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'ds.png'},
 
                                     {link: 'http://rasp.ivgpu.com',
                                     name: 'Сайт расписания занятий и экзаменов ИВГПУ',
                                     desc: 'Сайт расписания занятий и экзаменов ИВГПУ, где пользователь с помощью формы на главной странице может выбрать определенную учебную группу/преподавателя и найти соответствующее расписание занятий/экзаменов как на две недели, так и на определенный день. Полученное расписание можно скачать в формате <i>.xlsx.</i> <br> Пользователи, наделенные специальными правами, (администраторы) могут добавлять, изменять и удалять занятия для определенных учебных групп, а также некоторую другую информацию',
-                                    base: 'Laravel',
+                                    platform: 'Laravel',
                                     role: 'Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и первоначальная настройка фреймворка, установка необходимых пакетов, программирование с использованием API фреймворка, создание шаблонов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'rasp.png'},
 
                                     {link: 'http://smartex2.ivgpu.com',
                                     name: 'Сайт научной конференции "SMARTEX"',
                                     desc: 'Сайт научной конференции "SMARTEX"',
-                                    base: 'WordPress',
+                                    platform: 'WordPress',
                                     role: 'Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'smartex.png'},
 
                                     {link: 'http://poisk.ivgpu.com',
                                     name: 'Сайт научной конференции "ПОИСК"',
                                     desc: 'Сайт научной конференции "ПОИСК"',
-                                    base: 'WordPress',
+                                    platform: 'WordPress',
                                     role: 'Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'poisk.png'},
 
                                     {link: 'http://isv.ivgpu.com',
                                     name: 'Сайт научной конференции "Информационная среда вуза"',
                                     desc: 'Сайт научной конференции "Информационная среда вуза"',
-                                    base: 'WordPress',
+                                    platform: 'WordPress',
                                     role: 'Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'isv.png'},
 
                                     {link: 'http://genesis.ivgpu.com',
                                     name: 'Сайт научной конференции "Генезис"',
                                     desc: 'Сайт научной конференции "Генезис"',
-                                    base: 'WordPress',
+                                    platform: 'WordPress',
                                     role: 'Полная разработка сайтов. <br> Установка CMS, установка и настройка темы, установка и настройка плагинов, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка',
                                     img: 'genesis.png'},
 
                                     {link: 'https://romanjke.github.io/portfolio/axit/index.html',
                                     name: 'Верстка лендингов по psd шаблонам',
                                     desc: 'Верстка лендингов по psd шаблонам',
-                                    base: 'HTML',
+                                    platform: 'HTML',
                                     role: 'Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git',
                                     img: 'axit.png'},
 
                                     {link: 'https://romanjke.github.io/portfolio/fudi/index.html',
                                     name: 'Верстка лендингов по psd шаблонам',
                                     desc: 'Верстка лендингов по psd шаблонам',
-                                    base: 'HTML',
+                                    platform: 'HTML',
                                     role: 'Адаптивная верстка лендингов по бесплатным psd макетам. <br> В ходе этого была изучена работа со следующими технологиями: БЭМ, SCSS, Pug, SVG, Animate.css, Gulp, Webpack, консольный режим работы с Git',
                                     img: 'fudi.png'},
 
                                     {link: 'https://romanjke.github.io/portfolio/uberweb/index.html',
                                     name: 'Тестовое задание от веб-студии Uberweb',
                                     desc: 'Тестовое задание от веб-студии Uberweb',
-                                    base: 'HTML',
+                                    platform: 'HTML',
                                     role: 'Адаптивная верстка лендинга по psd макету',
                                     img: 'uberweb.png'},
 
 
                     ];
 
+                // PORTFOLIO MODALS
                 each work, index in works
-                    - var id = "portfolio_modal-" + index
+                    - var id = "portfolio_modal-" + (index + 1)
 
                     +portfolio-modal(work, id)
+                // PORTFOLIO MODALS END
 
             block cert-modals
 
+                // CERTIFICATES MODALS
                 each cert_block, index_block in certs
-                    each cert, index_cert in cert_block
-                        if index_cert > 0
-                            - var id = "cert_modal-" + index_block + index_cert
+                    each cert, index_cert in cert_block.certs
+                        - var id = "cert_modal-" + index_block + (index_cert + 1)
 
-                            +cert-modal(cert, id)
+                        +cert-modal(cert, id)
+                // CERTIFICATES MODALS END
 
             block scripts
                 // Bootstrap core JavaScript

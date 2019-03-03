@@ -1,3 +1,4 @@
+// Portfolio
 .portfolio {
     background: $dark-section-bg;
 
@@ -53,36 +54,5 @@
         font-size: 1.125rem;
         font-weight: 600;
     }
-
-    &__links {
-        @include center-x()
-        bottom: 0;
-        margin-bottom: 30px;
-        font-size: 0.875rem;
-        white-space: nowrap;
-    }
-
-    &__link {
-        color: #fff;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    &__work-link {
-        position: relative;
-        margin-right: 20px;
-
-        &:after {
-            content: '';
-            /*position: absolute;
-            top: 0;*/
-            @include center-y();
-            right: -10px;
-            width: 2px;
-            height: 20px;
-            background: $main-color;
-        }
-    }
 }
+// Portfolio end

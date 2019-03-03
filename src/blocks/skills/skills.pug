@@ -1,14 +1,21 @@
 mixin skills(skills)
+    // Skills
     section.section.skills#skills
         .container
             h2.title.title_level_2 Навыки
 
             .row
-                each skills_block in skills
-                    .col-md-6.skills__part
-                        each skill, index in skills_block
-                            if index == 0
-                                h3.title.title_level_3= skill
-                            else
-                                .skills__item.progress(style="height: 35px;")
-                                    .progress-bar.wow.animated.fadeInLeft(class="skills__bar skills__bar_" + skill.style role="progressbar" style="width:" + skill.percentage + "%" aria-valuenow=skill.percentage aria-valuemin="0" aria-valuemax="100")= skill.name + " " + skill.percentage + "%"
+                .col-md-6.skills__part
+                    h3.title.title_level_3 Технологии
+
+                    each tech in skills.technologies
+                        .skills__item.progress(style="height: 35px;")
+                            .progress-bar.wow.fadeInLeft(class="skills__bar skills__bar_" + tech.class role="progressbar" style="width:" + tech.percentage + "%" aria-valuenow=tech.percentage aria-valuemin="0" aria-valuemax="100")= tech.name + " " + tech.percentage + "%"
+
+                .col-md-6.skills__part
+                    h3.title.title_level_3 Платформы
+
+                    each platform in skills.platforms
+                        .skills__item.progress(style="height: 35px;")
+                            .progress-bar.wow.fadeInLeft(class="skills__bar skills__bar_" + platform.class role="progressbar" style="width:" + platform.percentage + "%" aria-valuenow=platform.percentage aria-valuemin="0" aria-valuemax="100")= platform.name + " " + platform.percentage + "%"
+    // Skills end

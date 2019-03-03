@@ -1,13 +1,14 @@
 mixin portfolio(works)
+    // Portfolio
     section.section.portfolio#portfolio
         .container
             h2.title.title_level_2 Портфолио
 
             .row.portfolio__list
                 each work, index in works
-                    .col-md-6.col-lg-4.wow.animated.fadeInUp(data-wow-delay="0." + (index+1) + "s")
-                        a(href="#" class="portfolio__item" data-toggle="modal" data-target="#portfolio_modal-" + index)
+                    .col-md-6.col-lg-4.wow.fadeInUp(data-wow-delay="0." + (index + 1) + "s")
+                        a(href="#" class="portfolio__item" data-toggle="modal" data-target="#portfolio_modal-" + (index+1))
                             img(src="img/" + work.img class="portfolio__image" alt=work.name)
-
                             .portfolio__over
                                 .portfolio__name= work.name
+    // Portfolio end

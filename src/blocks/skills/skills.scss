@@ -1,11 +1,12 @@
+// Skills
 .skills{
     &__part {
-        &:first-child {
+        &:not(:last-child) {
             margin-bottom: 40px;
         }
 
         @media (min-width: 768px) {
-            &:first-child {
+            &:not(:last-child) {
                 margin-bottom: 0;
             }
         }
@@ -67,3 +68,4 @@
         }
     }
 }
+// Skills end

@@ -1,3 +1,4 @@
+// Contacts
 .contacts {
     background-color: $dark-section-bg;
 
@@ -7,7 +8,7 @@
 
     &__item {
         display: inline-block;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         text-align: center;
         color: $sec-color;
 
@@ -17,3 +18,4 @@
         }
     }
 }
+// Contacts end

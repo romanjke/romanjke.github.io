@@ -6,7 +6,7 @@ mixin main-nav(menu)
             button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
                 i.fas.fa-bars.fa-2x
             .collapse.navbar-collapse#navbarResponsive
-                ul.navbar-nav.text-uppercase.ml-auto
+                ul.navbar-nav.ml-auto
                     each link in menu.links
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href="#" + link.alias)= link.name

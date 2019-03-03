@@ -48,4 +48,5 @@
     $('.navbar').removeClass('d-none');
   })
 
-})(jQuery); // End of use strict
+})(jQuery);
+// Main navigation end
