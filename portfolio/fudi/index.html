@@ -1,256 +1,244 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <nav class="nav" id="menu">
-    <div class="nav__close-wrapper"><a class="nav__close" href="#">x</a></div>
-    <ul class="nav__list">
-      <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
-      <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-      <li class="nav__item"><a class="nav__link" href="#app">app</a></li>
-      <li class="nav__item"><a class="nav__link" href="#testimonials">testimonials</a></li>
-      <li class="nav__item"><a class="nav__link" href="#cuisines">cuisines</a></li>
-    </ul>
-  </nav>
-  <div class="page push">
-    <head>
-      <title>Fudi</title>
-      <meta charset="utf-8"/>
-      <meta content="Bekades" name="author"/>
-      <meta content="Find your favorite recipes" name="description"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-      <meta name="viewport" content="width=device-width"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css"/>
-      <!-- build:css css/main.css-->
-      <link rel="stylesheet" href="css/main.css"/>
-      <!-- endbuild-->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
-    </head>
-    <body id="home">
-      <header class="header">
-        <div class="container">
-          <div class="header__top">
-            <div class="header__logo" data-aos="slideInLeft"><img src="img/logo.png" alt="Logo"/></div>
-            <div class="header__links" data-aos="slideInRight"><a class="header__link" href="#">Log&nbsp;in</a><a class="header__link" href="#">Sign&nbsp;up</a><a class="header__link" href="#menu">
-                <svg class="header__nav-toggle" width="14" height="10" viewBox="0 0 14 10">
-                  <rect y="0" width="14" height="2"></rect>
-                  <rect y="4" width="14" height="2"></rect>
-                  <rect y="8" width="14" height="2"></rect>
-                </svg></a></div>
-          </div>
-          <div class="header__content" data-aos="zoomIn">
-            <div class="header__about">Find your Favorite</div>
-            <h1 class="header__title">recipes</h1>
-            <button class="button button--transparent header__button">Get started</button>
-            <div class="header__text">or send us your own recipes and <a class="header__text-link" href="#">get rewarded</a>!</div>
-            <svg class="svg-icon svg-icon-logo svg-icon-- svg-icon--">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </div>
+  <head>
+    <title>Fudi</title>
+    <meta charset="utf-8"/>
+    <meta content="Roman" name="author"/>
+    <meta content="Fudi Responsive Landing Page" name="description"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="page push" id="home"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+	
+		<symbol id="cook" viewBox="0 0 60 60">
+			<g data-name="Слой 2" class="svg-icon-cook__inner"><path class="cls-1" d="M22.52 43.87l-15 3.78C3.61 49.13 1 54.8 1 59h58c0-4.2-2.61-9.87-6.55-11.35l-15-3.78"></path><path class="cls-2" d="M31 59V47.53"></path><path class="cls-1" d="M16 26c-2.52 0-1.13 9 2.36 9 0 7.57 8.15 12.61 11.64 12.61M44 26c1.26 0 1.13 9-2.36 9 0 7.57-8.15 12.61-11.64 12.61M14.87 16.43L16 26s3.91-3 14-3 14 3 14 3l1.13-9.57m-23.96-6.6a9.16 9.16 0 0 1 .37-2.53 5.66 5.66 0 1 0-6.67 9.13m30.26 0a5.66 5.66 0 1 0-6.68-9.13 8.8 8.8 0 0 1 .38 2.53m-.38-2.53a8.82 8.82 0 0 0-16.91 0m0 0a9.16 9.16 0 0 0-.37 2.53m17.66 0a8.8 8.8 0 0 0-.38-2.53M22.43 30c0-1.39 1.13-1.26 2.53-1.26s2.52-.13 2.52 1.26m5.04 0c0-1.39 1.13-1.26 2.52-1.26s2.53-.13 2.53 1.26"></path><path class="cls-3" d="M26.22 37a1.71 1.71 0 0 1 1.31 1.05h-2.62A1.7 1.7 0 0 1 26.22 37m0-2c-2.09 0-3.79 2.26-3.79 5.05H30C30 37.3 28.31 35 26.22 35zm7.56 2a1.7 1.7 0 0 1 1.31 1.05h-2.62A1.71 1.71 0 0 1 33.78 37m0-2C31.69 35 30 37.3 30 40.09h7.57c0-2.79-1.7-5.05-3.79-5.05z"></path></g>
+		</symbol>
+	
+		<symbol id="hamburger" viewBox="0 0 60 60">
+			<g data-name="Слой 2" class="svg-icon-hamburger__inner"><path class="cls-1" d="M30 41l15 8 8-8"></path><path class="cls-1" d="M59 46a5 5 0 0 1-5 5H6a5 5 0 0 1 0-10h48a5 5 0 0 1 5 5zM6 51v3a5 5 0 0 0 5 5h38a5 5 0 0 0 5-5v-3zm48-28C54 9.77 43.23 1 30 1S6 9.77 6 23zM6 23s-5 3-5 5c0 2.79 2.22 3 5 3 1.34 0 3.1-.14 4-1 1.29 2.33 3.15 4 6 4 3.1 0 5.83-2.33 7-5 1.16 2.67 3.89 4 7 4s5.83-1.33 7-4c1.16 2.67 3.89 5 7 5a8.27 8.27 0 0 0 7-4c.9.86 2.66 1 4 1 2.79 0 4-.21 4-3 0-2-5-5-5-5"></path><path class="cls-1" d="M6 31a5 5 0 0 0 0 10h48a5 5 0 0 0 0-10"></path><path d="M17 10a1 1 0 1 0 1 1 1 1 0 0 0-1-1zm14 0a1 1 0 1 0 1 1 1 1 0 0 0-1-1zm12 0a1 1 0 1 0 1 1 1 1 0 0 0-1-1zM23 6a1 1 0 1 0 1 1 1 1 0 0 0-1-1zm14 0a1 1 0 1 0 1 1 1 1 0 0 0-1-1z"></path></g>
+		</symbol>
+	
+		<symbol id="menu" viewBox="0 0 14 10">
+			<path d="M0 0h14v2H0zm0 4h14v2H0zm0 4h14v2H0z"></path>
+		</symbol>
+	
+		<symbol id="money" viewBox="0 0 60 32">
+			<g data-name="Слой 2" class="svg-icon-money__inner"><path class="cls-1" d="M59 8L44 18H31m28-4L44 24H31m28-5L44 29H31"></path><path class="cls-1" d="M31 31H13V11L28 1h18L31 11v20zM13 17H1m12 4H1m12 4H1m12 4H1"></path><path class="cls-2" d="M43 3h16L44 13H31m-18 0H1L16 3h9"></path><path class="cls-1" d="M22 25v2m0-16v2m-3 9a3 3 0 1 0 3-3 3 3 0 1 1 3-3"></path></g>
+		</symbol>
+	
+</svg>
+
+    <nav class="nav" id="nav">
+      <div class="nav__close-wrapper"><a class="nav__close" href="#">x</a></div>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#home">home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
+        <li class="nav__item"><a class="nav__link" href="#app">app</a></li>
+        <li class="nav__item"><a class="nav__link" href="#testimonials">testimonials</a></li>
+        <li class="nav__item"><a class="nav__link" href="#cuisines">cuisines</a></li>
+        <li class="nav__item"><a class="nav__link" href="#summary">summary</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header__top"><a class="header__logo" href="#home" data-aos="slideInLeft"><img src="img/logo.png" alt="Logo"/></a>
+          <div class="header__links" data-aos="slideInRight"><a class="header__link" href="#">Log&nbsp;in</a><a class="header__link" href="#">Sign&nbsp;up</a><a class="header__link header__nav-toggle" href="#nav">
+              <svg class="svg-icon svg-icon-menu">
+                <use xlink:href="#menu"></use>
+              </svg></a></div>
         </div>
-      </header>
-      <section class="about" id="about">
-        <div class="container">
-          <ul class="about__list">
-            <li class="about__item" data-aos="bounceInUp">
-              <div class="about__icon">
-                <svg class="svg-icon svg-icon-hamburger svg-icon--center svg-icon--red">
-                  <use xlink:href="img/sprite.svg#hamburger"></use>
-                </svg>
-              </div>
-              <h2 class="title title--center">Get inspired</h2>
-              <div class="text text--center">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisc
-                  Pellentesque vel enim a elit viverra elementuma.
-                  Aliquam erat volutpat.
-                </p>
-              </div>
-            </li>
-            <li class="about__item" data-aos="bounceInUp">
-              <div class="about__icon">
-                <svg class="svg-icon svg-icon-money svg-icon--center svg-icon--red">
-                  <use xlink:href="img/sprite.svg#money"></use>
-                </svg>
-              </div>
-              <h2 class="title title--center">Get rewarded</h2>
-              <div class="text text--center">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisc
-                  Pellentesque vel enim a elit viverra elementuma.
-                  Aliquam erat volutpat.
-                </p>
-              </div>
-            </li>
-            <li class="about__item" data-aos="bounceInUp">
-              <div class="about__icon">
-                <svg class="svg-icon svg-icon-cook svg-icon--center svg-icon--">
-                  <use xlink:href="img/sprite.svg#cook"></use>
-                </svg>
-              </div>
-              <h2 class="title title--center">Get social</h2>
-              <div class="text text--center">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisc
-                  Pellentesque vel enim a elit viverra elementuma.
-                  Aliquam erat volutpat.
-                </p>
-              </div>
-            </li>
-          </ul>
+        <div class="header__content" data-aos="zoomIn">
+          <div class="header__about">Find your Favorite</div>
+          <h1 class="header__title">recipes</h1><a class="button button--transparent header__button" href="#about">Get started</a>
+          <div class="header__text">or send us your own recipes and <a class="header__text-link" href="#">get rewarded</a>!</div>
         </div>
-      </section>
-      <section class="app" id="app">
-        <div class="container">
-          <div class="app__wrap">
-            <div class="app__left">
-              <div class="app__image-wrap"><img class="app__image" src="img/iphone.png" alt="iPhone" data-aos="slideInUp"/></div>
+      </div>
+    </header>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <ul class="about__list">
+          <li class="about__item" data-aos="bounceInUp">
+            <div class="about__icon">
+              <svg class="svg-icon svg-icon-hamburger svg-icon--center svg-icon--red">
+                <use xlink:href="#hamburger"></use>
+              </svg>
             </div>
-            <div class="app__right" data-aos="fadeIn">
-              <h2 class="title">Introducing the fudi app</h2>
-              <div class="app__text text">
-                <p>
-                  Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet
-                  felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
-                  ibulum tristique. Suspendisse tristique lacus ac mattis porta.
-                  
-                </p>
-                <p>
-                  Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
-                  libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
-                  sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
-                  Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
-                  
-                </p>
-                <p>
-                  Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
-                  malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
-                  ante, a mattis massa.
-                  
-                </p>
-              </div>
-              <div class="app__icons"><a class="app__icon-link" href="#"><img src="img/appstore.png" alt="App Store" data-aos="bounceIn"/></a><a class="app__icon-link" href="#"><img src="img/googleplay.png" alt="Google play" data-aos="bounceIn"/></a></div>
+            <h2 class="title title--center">Get inspired</h2>
+            <div class="text text--center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="testimonials" id="testimonials">
-        <div class="container">
-          <div class="flexslider slider" data-aos="fadeInUp">
-            <ul class="slides slider__list">
-              <li class="slider__item">
-                <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
-                <blockquote class="slider__quote-wrap">
-                  <p class="slider__quote">
-                    “I am so happy because I found this recipe, and it just made my life easier.
-                    Thanks  so much for sharing!”
-                  </p>
-                  <footer class="slider__author">
-                    <cite>- Michael Dawson, San Francisco, CA -</cite>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="slider__item">
-                <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
-                <blockquote class="slider__quote-wrap">
-                  <p class="slider__quote">
-                    “I am so happy because I found this recipe, and it just made my life easier.
-                    Thanks  so much for sharing!”
-                  </p>
-                  <footer class="slider__author">
-                    <cite>- Michael Dawson, San Francisco, CA -</cite>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="slider__item">
-                <div class="slider__image-wrap"><img class="slider__image" src="img/dawson-m.jpg" alt="Michael Dawson"/></div>
-                <blockquote class="slider__quote-wrap">
-                  <p class="slider__quote">
-                    “I am so happy because I found this recipe, and it just made my life easier.
-                    Thanks  so much for sharing!”
-                  </p>
-                  <footer class="slider__author">
-                    <cite>- Michael Dawson, San Francisco, CA -</cite>
-                  </footer>
-                </blockquote>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="cuisines" id="cuisines">
-        <h2 class="cuisines__title title title--center">Browse by cuisines</h2>
-        <ul class="cuisines__list">
-          <li class="cuisines__item" data-aos="fadeInUp delay-1"><a class="cuisines__link" href="#" style="background-image: url(img/italian.jpg">
-              <div class="cuisines__subtitle">327 Recipes</div>
-              <h3 class="cuisines__list-title">italian</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-2"><a class="cuisines__link" href="#" style="background-image: url(img/indian.jpg">
-              <div class="cuisines__subtitle">856 Recipes</div>
-              <h3 class="cuisines__list-title">indian</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-3"><a class="cuisines__link" href="#" style="background-image: url(img/french.jpg">
-              <div class="cuisines__subtitle">27 Recipes</div>
-              <h3 class="cuisines__list-title">french</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-4"><a class="cuisines__link" href="#" style="background-image: url(img/steakhouse.jpg">
-              <div class="cuisines__subtitle">174 Recipes</div>
-              <h3 class="cuisines__list-title">steakhouse</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-5"><a class="cuisines__link" href="#" style="background-image: url(img/seafood.jpg">
-              <div class="cuisines__subtitle">731 Recipes</div>
-              <h3 class="cuisines__list-title">seafood</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-6"><a class="cuisines__link" href="#" style="background-image: url(img/sushi.jpg">
-              <div class="cuisines__subtitle">237 Recipes</div>
-              <h3 class="cuisines__list-title">sushi</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-7"><a class="cuisines__link" href="#" style="background-image: url(img/mexican.jpg">
-              <div class="cuisines__subtitle">529 Recipes</div>
-              <h3 class="cuisines__list-title">mexican</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-8"><a class="cuisines__link" href="#" style="background-image: url(img/chinese.jpg">
-              <div class="cuisines__subtitle">145 Recipes</div>
-              <h3 class="cuisines__list-title">chinese</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-9"><a class="cuisines__link" href="#" style="background-image: url(img/pizza.jpg">
-              <div class="cuisines__subtitle">327 Recipes</div>
-              <h3 class="cuisines__list-title">pizza</h3></a></li>
-          <li class="cuisines__item" data-aos="fadeInUp delay-10"><a class="cuisines__link" href="#" style="background-image: url(img/american.jpg">
-              <div class="cuisines__subtitle">1.437 Recipes</div>
-              <h3 class="cuisines__list-title">american</h3></a></li>
+          </li>
+          <li class="about__item" data-aos="bounceInUp">
+            <div class="about__icon">
+              <svg class="svg-icon svg-icon-money svg-icon--center svg-icon--red">
+                <use xlink:href="#money"></use>
+              </svg>
+            </div>
+            <h2 class="title title--center">Get rewarded</h2>
+            <div class="text text--center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+            </div>
+          </li>
+          <li class="about__item" data-aos="bounceInUp">
+            <div class="about__icon">
+              <svg class="svg-icon svg-icon-cook svg-icon--center svg-icon--red">
+                <use xlink:href="#cook"></use>
+              </svg>
+            </div>
+            <h2 class="title title--center">Get social</h2>
+            <div class="text text--center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+            </div>
+          </li>
         </ul>
-        <div class="container">
-          <ul class="cuisines__summary-list">
-            <li class="cuisines__summary-item" data-aos="fadeInUp">
-              <div class="cuisines__summary-count">23,567</div>
-              <div class="cuisines__summary-desc">Recipes Available</div>
+      </div>
+    </section>
+    <section class="app" id="app">
+      <div class="container app__container">
+        <div class="app__wrap">
+          <div class="app__left">
+            <div class="app__image-wrap"><img class="app__image" src="img/iphone.png" alt="iPhone" data-aos="slideInUp"/></div>
+          </div>
+          <div class="app__right" data-aos="fadeIn">
+            <h2 class="title">Introducing the fudi app</h2>
+            <div class="app__text text">
+              <p>
+                Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet
+                felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                ibulum tristique. Suspendisse tristique lacus ac mattis porta.
+                
+              </p>
+              <p>
+                Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
+                libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
+                Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
+                
+              </p>
+              <p>
+                Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
+                malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
+                ante, a mattis massa.
+                
+              </p>
+            </div>
+            <div class="app__icons"><a class="app__icon-link" href="#"><img src="img/appstore.png" alt="App Store" data-aos="bounceIn"/></a><a class="app__icon-link" href="#"><img src="img/googleplay.png" alt="Google play" data-aos="bounceIn"/></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="flexslider slider" data-aos="fadeInUp">
+          <ul class="slides slider__list">
+            <li class="slider__item">
+              <div class="slider__image-wrap"><img class="slider__image" src="img/person.jpg" alt="Michael Dawson"/></div>
+              <blockquote class="slider__quote-wrap">
+                <p class="slider__quote">“I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!”</p>
+                <footer class="slider__author">
+                  <cite>- Michael Dawson, San Francisco, CA -</cite>
+                </footer>
+              </blockquote>
             </li>
-            <li class="cuisines__summary-item" data-aos="fadeInUp">
-              <div class="cuisines__summary-count">431,729</div>
-              <div class="cuisines__summary-desc">Active Users</div>
+            <li class="slider__item">
+              <div class="slider__image-wrap"><img class="slider__image" src="img/person.jpg" alt="John Smith"/></div>
+              <blockquote class="slider__quote-wrap">
+                <p class="slider__quote">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ad maiores delectus sit at ipsa.”</p>
+                <footer class="slider__author">
+                  <cite>- John Smith, Los Angeles, CA -</cite>
+                </footer>
+              </blockquote>
             </li>
-            <li class="cuisines__summary-item" data-aos="fadeInUp">
-              <div class="cuisines__summary-count">892,173</div>
-              <div class="cuisines__summary-desc">Positive Reviews</div>
-            </li>
-            <li class="cuisines__summary-item" data-aos="fadeInUp">
-              <div class="cuisines__summary-count">56,581</div>
-              <div class="cuisines__summary-desc">Photos &amp; Videos</div>
-            </li>
-            <li class="cuisines__summary-item" data-aos="fadeInUp">
-              <div class="cuisines__summary-count">3,182</div>
-              <div class="cuisines__summary-desc">Spices and Herbs</div>
+            <li class="slider__item">
+              <div class="slider__image-wrap"><img class="slider__image" src="img/person.jpg" alt="Jack Brown"/></div>
+              <blockquote class="slider__quote-wrap">
+                <p class="slider__quote">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dignissimos, neque maiores. Necessitatibus eveniet molestias ea architecto magnam?B...”</p>
+                <footer class="slider__author">
+                  <cite>- Jack Brown, New York, NY -</cite>
+                </footer>
+              </blockquote>
             </li>
           </ul>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__wrapper">
-            <div class="footer__copy">&copy;2014 Fudi. All Rights Reserved.</div>
-            <div class="footer__designby">design by: <a class="footer__link" href="www.bekades.com" target="_blank">www.bekades.com</a></div>
-          </div>
+      </div>
+    </section>
+    <section class="cuisines" id="cuisines">
+      <h2 class="cuisines__title title title--center">Browse by cuisines</h2>
+      <ul class="cuisines__list">
+        <li class="cuisines__item" data-aos="fadeInUp delay-1"><a class="cuisines__link" href="#" style="background-image: url(img/italian.jpg)">
+            <div class="cuisines__item-count">327 Recipes</div>
+            <h3 class="cuisines__item-title">italian</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-2"><a class="cuisines__link" href="#" style="background-image: url(img/indian.jpg)">
+            <div class="cuisines__item-count">856 Recipes</div>
+            <h3 class="cuisines__item-title">indian</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-3"><a class="cuisines__link" href="#" style="background-image: url(img/french.jpg)">
+            <div class="cuisines__item-count">27 Recipes</div>
+            <h3 class="cuisines__item-title">french</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-4"><a class="cuisines__link" href="#" style="background-image: url(img/steakhouse.jpg)">
+            <div class="cuisines__item-count">174 Recipes</div>
+            <h3 class="cuisines__item-title">steakhouse</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-5"><a class="cuisines__link" href="#" style="background-image: url(img/seafood.jpg)">
+            <div class="cuisines__item-count">731 Recipes</div>
+            <h3 class="cuisines__item-title">seafood</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-6"><a class="cuisines__link" href="#" style="background-image: url(img/sushi.jpg)">
+            <div class="cuisines__item-count">237 Recipes</div>
+            <h3 class="cuisines__item-title">sushi</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-7"><a class="cuisines__link" href="#" style="background-image: url(img/mexican.jpg)">
+            <div class="cuisines__item-count">529 Recipes</div>
+            <h3 class="cuisines__item-title">mexican</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-8"><a class="cuisines__link" href="#" style="background-image: url(img/chinese.jpg)">
+            <div class="cuisines__item-count">145 Recipes</div>
+            <h3 class="cuisines__item-title">chinese</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-9"><a class="cuisines__link" href="#" style="background-image: url(img/pizza.jpg)">
+            <div class="cuisines__item-count">327 Recipes</div>
+            <h3 class="cuisines__item-title">pizza</h3></a></li>
+        <li class="cuisines__item" data-aos="fadeInUp delay-10"><a class="cuisines__link" href="#" style="background-image: url(img/american.jpg)">
+            <div class="cuisines__item-count">1.437 Recipes</div>
+            <h3 class="cuisines__item-title">american</h3></a></li>
+      </ul>
+    </section>
+    <section class="summary" id="summary">
+      <div class="container summary__container">
+        <ul class="summary__list">
+          <li class="summary__item" data-aos="fadeInUp">
+            <div class="summary__count">23,567</div>
+            <div class="summary__desc">Recipes Available</div>
+          </li>
+          <li class="summary__item" data-aos="fadeInUp">
+            <div class="summary__count">431,729</div>
+            <div class="summary__desc">Active Users</div>
+          </li>
+          <li class="summary__item" data-aos="fadeInUp">
+            <div class="summary__count">892,173</div>
+            <div class="summary__desc">Positive Reviews</div>
+          </li>
+          <li class="summary__item" data-aos="fadeInUp">
+            <div class="summary__count">56,581</div>
+            <div class="summary__desc">Photos &amp; Videos</div>
+          </li>
+          <li class="summary__item" data-aos="fadeInUp">
+            <div class="summary__count">3,182</div>
+            <div class="summary__desc">Spices and Herbs</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__copy">&copy;2014 Fudi. All Rights Reserved.</div>
+          <div class="footer__designby">design by: <a class="footer__link" href="www.bekades.com" target="_blank">www.bekades.com</a></div>
         </div>
-      </footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bigslide.js/0.12.0/bigSlide.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <!-- build:js js/main.js-->
-      <script src="js/main.js"></script>
-      <!-- endbuild-->
-    </body>
-  </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bigslide.js/0.12.0/bigSlide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
