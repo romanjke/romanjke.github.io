@@ -55,6 +55,9 @@ html(lang="ru")
                             {name: 'jQuery',
                             percentage: '60',
                             class: 'jquery'},
+                            {name: 'Pixel Perfect',
+                            percentage: '80',
+                            class: 'pixel-perfect'},
                             {name: 'PHP',
                             percentage: '60',
                             class: 'php'},
@@ -89,12 +92,20 @@ html(lang="ru")
             block portfolio
                 -
                     var works = [
-                        {name: 'Официальный сайт ИВГПУ',
-                        img:'ivgpu.jpg'},
+                        {name: 'Элементарный блог на Laravel',
+                        img:'blog.jpg'},
+                        {name: 'Верстка лендинга Inkoch',
+                        img:'uberweb.jpg'},
+                        {name: 'Верстка лендинга Fudi',
+                        img:'fudi.jpg'},
+                        {name: 'Верстка лендинга Axit',
+                        img:'axit.jpg'},
                         {name: 'Сайт расписания занятий и экзаменов ИВГПУ',
                         img:'rasp.jpg'},
                         {name: 'Сайт диссертационных советов ИВГПУ',
                         img:'ds.jpg'},
+                        {name: 'Официальный сайт ИВГПУ',
+                        img:'ivgpu.jpg'},
                         {name: 'Сайт научной конференции «SMARTEX»',
                         img:'smartex.jpg'},
                         {name: 'Сайт научной конференции «ПОИСК»',
@@ -102,13 +113,7 @@ html(lang="ru")
                         {name: 'Сайт научной конференции «Информационная среда вуза»',
                         img:'isv.jpg'},
                         {name: 'Сайт научной конференции «Генезис»',
-                        img:'genesis.jpg'},
-                        {name: 'Верстка лендингов по psd шаблонам',
-                        img:'axit.jpg'},
-                        {name: 'Верстка лендингов по psd шаблонам',
-                        img:'fudi.jpg'},
-                        {name: 'Тестовое задание от веб-студии Uberweb',
-                        img:'uberweb.jpg'}
+                        img:'genesis.jpg'}
                     ];
 
                 +portfolio(works)
@@ -165,13 +170,37 @@ html(lang="ru")
             block portfolio-modals
                 -
                     var works = [
-                                    {link: 'http://ivgpu.com',
-                                    name: 'Официальный сайт ИВГПУ',
-                                    desc: 'Официальный сайт Ивановского Государственного Политехнического Университета (ИВГПУ)',
-                                    platform: 'Joomla',
-                                    role: 'Участие в совместной разработке нового официального сайта ИВГПУ. <br> Создание шаблонов и интеграция в них верстки, добавление нового функционала, создание страниц и наполнение их контентом, обработка изображений, техническая поддержка.',
-                                    img: 'ivgpu.jpg',
-                                    source: ''},
+                                    {link: 'https://github.com/romanjke/blog',
+                                    name: 'Элементарный блог на Laravel',
+                                    desc: 'Тестовое задание от компании <i>WMStudio</i> по разработке элементарного блога на <i>Laravel</i>',
+                                    platform: 'Laravel',
+                                    role: '',
+                                    img: 'blog.jpg',
+                                    source: 'https://github.com/romanjke/blog'},
+
+                                    {link: 'https://romanjke.github.io/portfolio/uberweb/',
+                                    name: 'Верстка лендинга Inkoch',
+                                    desc: 'Тестовое задание от компании <i>Uberweb</i> по адаптивной верстке лендинга по <i>psd</i> макету <i>Inkoch</i>',
+                                    platform: 'HTML',
+                                    role: '',
+                                    img: 'uberweb.jpg',
+                                    source: 'https://github.com/romanjke/uberweb'},
+
+                                    {link: 'https://romanjke.github.io/portfolio/fudi/',
+                                    name: 'Верстка лендинга Fudi',
+                                    desc: 'Адаптивная верстка лендинга по <i>psd</i> макету <i>Fudi</i>',
+                                    platform: 'HTML',
+                                    role: 'В ходе этого была изучена работа со следующими технологиями: <i>БЭМ</i>, <i>SCSS</i>, <i>Pug</i>, <i>SVG</i>, <i>Animate.css</i>, <i>Gulp</i>, <i>Webpack</i>, <i>Pixel Perfect</i>, консольный режим работы с <i>Git</i>.',
+                                    img: 'fudi.jpg',
+                                    source: 'https://github.com/romanjke/fudi'},
+
+                                    {link: 'https://romanjke.github.io/portfolio/axit/',
+                                    name: 'Верстка лендинга Axit',
+                                    desc: 'Адаптивная верстка лендинга по <i>psd</i> макету <i>Axit</i>',
+                                    platform: 'HTML',
+                                    role: 'В ходе этого была изучена работа со следующими технологиями: <i>БЭМ</i>, <i>SCSS</i>, <i>Pug</i>, <i>SVG</i>, <i>Animate.css</i>, <i>Gulp</i>, <i>Webpack</i>, <i>Pixel Perfect</i>, консольный режим работы с <i>Git</i>.',
+                                    img: 'axit.jpg',
+                                    source: 'https://github.com/romanjke/axit'},
 
                                     {link: 'http://rasp.ivgpu.com',
                                     name: 'Сайт расписания занятий и экзаменов ИВГПУ',
@@ -187,6 +216,14 @@ html(lang="ru")
                                     platform: 'Laravel',
                                     role: 'Полная разработка сайта. <br> Проектирование структуры сайта, проектирование архитектуры базы данных, установка и настройка фреймворка, добавление необходимых пакетов через <i>Composer</i>, программирование функционала с помощью <i>API</i> фреймворка, наполнение первоначальным контентом, создание поддомена, размещение на хостинге, дальнейшая поддержка.',
                                     img: 'ds.jpg',
+                                    source: ''},
+
+                                    {link: 'http://ivgpu.com',
+                                    name: 'Официальный сайт ИВГПУ',
+                                    desc: 'Официальный сайт Ивановского Государственного Политехнического Университета (ИВГПУ)',
+                                    platform: 'Joomla',
+                                    role: 'Участие в совместной разработке нового официального сайта ИВГПУ. <br> Создание шаблонов и интеграция в них верстки, добавление нового функционала, создание страниц и наполнение их контентом, обработка изображений, техническая поддержка.',
+                                    img: 'ivgpu.jpg',
                                     source: ''},
 
                                     {link: 'http://smartex2.ivgpu.com',
@@ -219,31 +256,7 @@ html(lang="ru")
                                     platform: 'WordPress',
                                     role: 'Полная разработка сайта. <br> Установка и настройка <i>CMS</i>, добавление нового функционала, создание страниц и наполнение их контентом, обработка изображений, создание поддомена, размещение на хостинге, дальнейшая поддержка.',
                                     img: 'genesis.jpg',
-                                    source: ''},
-
-                                    {link: 'https://romanjke.github.io/portfolio/axit/',
-                                    name: 'Верстка лендинга Axit',
-                                    desc: 'Верстка лендинга Axit',
-                                    platform: 'HTML',
-                                    role: 'Адаптивная верстка лендинга по бесплатному <i>psd</i> макету Axit. <br> В ходе этого была изучена работа со следующими технологиями: <i>БЭМ</i>, <i>SCSS</i>, <i>Pug</i>, <i>SVG</i>, <i>Animate.css</i>, <i>Gulp</i>, <i>Webpack</i>, консольный режим работы с <i>Git</i>.',
-                                    img: 'axit.jpg',
-                                    source: 'https://github.com/romanjke/axit'},
-
-                                    {link: 'https://romanjke.github.io/portfolio/fudi/',
-                                    name: 'Верстка лендинга Fudi',
-                                    desc: 'Верстка лендинга Fudi',
-                                    platform: 'HTML',
-                                    role: 'Адаптивная верстка лендинга по бесплатному <i>psd</i> макету Fudi. <br> В ходе этого была изучена работа со следующими технологиями: <i>БЭМ</i>, <i>SCSS</i>, <i>Pug</i>, <i>SVG</i>, <i>Animate.css</i>, <i>Gulp</i>, <i>Webpack</i>, консольный режим работы с <i>Git</i>.',
-                                    img: 'fudi.jpg',
-                                    source: 'https://github.com/romanjke/fudi'},
-
-                                    {link: 'https://romanjke.github.io/portfolio/uberweb/',
-                                    name: 'Тестовое задание от веб-студии Uberweb',
-                                    desc: 'Тестовое задание от веб-студии Uberweb',
-                                    platform: 'HTML',
-                                    role: 'Адаптивная верстка лендинга по <i>psd</i> макету для дальнейшей интеграции в <i>1С-Битрикс</i>',
-                                    img: 'uberweb.jpg',
-                                    source: 'https://github.com/romanjke/uberweb'},
+                                    source: ''}
                     ];
 
                 // PORTFOLIO MODALS

@@ -21,8 +21,9 @@ mixin portfolio-modal(work, id)
                         dt Платформа:
                         dd: i= work.platform
 
-                        dt Моя роль:
-                        dd !{work.role}
+                        if work.role
+                            dt Моя роль:
+                            dd !{work.role}
 
                         if work.source
                             dt Исходники:
