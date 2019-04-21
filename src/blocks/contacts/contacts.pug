@@ -1,13 +1,16 @@
-mixin contacts(contacts)
+mixin contacts()
     // Contacts
     section.section.contacts#contacts
         .container
             h2.title.title_level_2 Контакты
 
             .row.contacts__items
-                each contact, index in contacts
-                    .col-sm-6.wow.bounceIn(data-wow-delay="0." + (index+1) + "s")
-                        a(href=contact.link class="contacts__item" target="_blank")
-                            i(class=contact.class)
-                            p= contact.name
+                .col-sm-6.wow.bounceIn(data-wow-delay="0.1s")
+                    .contacts__item
+                        i(class="far fa-envelope fa-4x")
+                        p romanjkez0r@gmail.com
+                .col-sm-6.wow.bounceIn(data-wow-delay="0.2s")
+                    a(href="https://github.com/romanjke" class="contacts__item" target="_blank")
+                        i(class="fab fa-github fa-4x")
+                        p romanjke
     // Contacts end
